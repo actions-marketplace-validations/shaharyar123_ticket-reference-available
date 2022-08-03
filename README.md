@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Check for ticket
-        uses: shaharyar123/ticket-reference-available@master
+        uses: shaharyar123/ticket-reference-available@v1
         with:
           bodyRegex: '#(?<ticketNumber>\d+)'
           bodyURLRegex: 'http(s?):\/\/(github.com)(\/:owner)(\/:repo)(\/issues)\/(?<ticketNumber>\d+)'
@@ -61,7 +61,7 @@ jobs:
 
     steps:
       - name: Check for ticket
-        uses: shaharyar123/ticket-reference-available@master
+        uses: shaharyar123/ticket-reference-available@v1
         with:
           bodyRegex: 'PROJ-(?<ticketNumber>\d+)'
           bodyURLRegex: 'http(s?):\/\/(:org.atlassian.net)(\/browse)\/(PROJ\-)(?<ticketNumber>\d+)'
@@ -83,7 +83,7 @@ jobs:
 
     steps:
       - name: Check for ticket
-        uses: shaharyar123/ticket-reference-available@master
+        uses: shaharyar123/ticket-reference-available@v1
         with:
           bodyRegex: '(CH|sc)(-?)(?<ticketNumber>\d+)'
           bodyURLRegex: 'https?:\/\/app\.(clubhouse.io|shortcut.com)(\/:org)\/story\/(?<ticketNumber>\d+)'
